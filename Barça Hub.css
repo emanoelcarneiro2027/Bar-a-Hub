@@ -21,6 +21,7 @@ body {
 
 .login-box {
     width: 500px;
+    margin-top: 10%;
 }
 
 .login-box h1 {
@@ -60,8 +61,8 @@ body {
 
 .login-box button {
     display: block;
-    margin: 60px auto 0;
-    width: 430px;
+    margin: 20px auto 0;
+    width: 100%;
     height: 80px;
     border: none;
     border-radius: 20px;
@@ -79,7 +80,9 @@ body {
 
 .logo {
     width: 180px;
-    transform: translate(-30px);
+    transform: translate(-20px, -150px);
+    position: relative;
+    
 }
 .cadastro {
     text-align: center;
@@ -101,9 +104,131 @@ body {
 }
 
 .cadastro a:hover {
-
     text-decoration: underline;
-
 }
+
+.login {
+    text-align: center;
+    margin-top: 20px;
+    transform: translateY(-10px);
+}
+
+.login p {
+    display: inline;
+    font-size: 14px;
+    color: white;
+}
+
+.login a {
+    color: #ff1616;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+.naveg {
+    background: #A50044;
+    height: 75%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 2px;
+}
+.naveg-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.naveg-logo img{
+    width: 50px;
+}
+
+.naveg-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.naveg-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+.naveg-links a:hover {
+    color: #191452;
+}
+
+.card-laliga {
+    width: 900px;
+    margin: 40px auto;
+    background: white;
+    color: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-laliga {
+    background: #111;
+    color: white;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-laliga h2 {
+    font-size: 22px;
+}
+
+.titulo-laliga span {
+    color: #aaa;
+}
+
+.tabela {
+    width: 100%;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 50px 1fr repeat(8, 55px);
+    align-items: center;
+    min-height: 55px;
+    padding: 0 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.linha span:first-child {
+    font-weight: bold;
+}
+
+.linha strong {
+    text-align: left;
+}
+
+.cabecalho {
+    min-height: 45px;
+    background: #f1f1f1;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cabecalho span:nth-child(2) {
+    text-align: left;
+}
+
+.linha:hover:not(.cabecalho) {
+    background: #f7f7f7;
+}
+
+
  
- 
+
