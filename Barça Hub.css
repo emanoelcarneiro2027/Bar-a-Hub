@@ -16,7 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 120px;
-    background: linear-gradient(120deg, #191452, #26106b);
+    background: #191452,
 }
 
 .login-box {
@@ -229,6 +229,54 @@ body {
     background: #f7f7f7;
 }
 
+.titulos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 900px;
+    margin: 30px auto;
+}
 
- 
+.titulos-card {
+    width: 100%;
+    padding: 25px;
+    background: #191452; 
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.titulos-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+
+.titulos-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulos-text {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.titulos-info strong {
+    font-size: 42px;
+    line-height: 1;
+    margin: 8px 0;
+}
+
+.titulos-desc {
+    font-size: 14px;
+    opacity: 0.9;
+}
