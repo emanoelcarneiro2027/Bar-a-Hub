@@ -1,282 +1,348 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #004D98;
-    color: white;
-}
-
-.login-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 120px;
-    background: #191452,
-}
-
-.login-box {
-    width: 500px;
-    margin-top: 10%;
-}
-
-.login-box h1 {
-    color: #A50044;
-    font-size: 38px;
-    margin-bottom: 10px;
-}
-
-.login-box p {
-    font-size: 18px;
-    margin-bottom: 70px;
-}
-
-.login-box label {
-    display: block;
-    color: #A50044;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.login-box input {
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-radius: 25px;
-    padding: 0 25px;
-    margin-bottom: 25px;
-    background: #160d3c;
-    color: white;
-    font-size: 16px;
-    outline: none;
-}
-
-.login-box input::placeholder {
-    color: #ddd;
-}
-
-.login-box button {
-    display: block;
-    margin: 20px auto 0;
-    width: 100%;
-    height: 80px;
-    border: none;
-    border-radius: 20px;
-    background: #A50044;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.login-box button:hover {
-    background: #A50044;
-    transform: scale(1.03);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-}
-
-.logo {
-    width: 180px;
-    transform: translate(-20px, -150px);
-    position: relative;
-    
-}
-.cadastro {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.cadastro p {
-    display: inline;
-    font-size: 14px;
-    color: white;
-}
-
-.cadastro a {
-    color: #ff1616;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 5px;
-    text-decoration: underline;
-}
-
-.cadastro a:hover {
-    text-decoration: underline;
-}
-
-.login {
-    text-align: center;
-    margin-top: 20px;
-    transform: translateY(-10px);
-}
-
-.login p {
-    display: inline;
-    font-size: 14px;
-    color: white;
-}
-
-.login a {
-    color: #ff1616;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 5px;
-    text-decoration: underline;
-}
-
-.login a:hover {
-    text-decoration: underline;
-}
-
-.naveg {
-    background: #A50044;
-    height: 75%;
-    width: 100%;
-    padding: 20px;
-    border-radius: 2px;
-}
-.naveg-logo{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.naveg-logo img{
-    width: 50px;
-}
-
-.naveg-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.naveg-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    
-}
-.naveg-links a:hover {
-    color: #191452;
-}
-
-.card-laliga {
-    width: 900px;
-    margin: 40px auto;
-    background: white;
-    color: #111;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.titulo-laliga {
-    background: #111;
-    color: white;
-    padding: 20px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.titulo-laliga h2 {
-    font-size: 22px;
-}
-
-.titulo-laliga span {
-    color: #aaa;
-}
-
-.tabela {
-    width: 100%;
-}
-
-.linha {
-    display: grid;
-    grid-template-columns: 50px 1fr repeat(8, 55px);
-    align-items: center;
-    min-height: 55px;
-    padding: 0 15px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-}
-
-.linha span:first-child {
-    font-weight: bold;
-}
-
-.linha strong {
-    text-align: left;
-}
-
-.cabecalho {
-    min-height: 45px;
-    background: #f1f1f1;
-    color: #666;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.cabecalho span:nth-child(2) {
-    text-align: left;
-}
-
-.linha:hover:not(.cabecalho) {
-    background: #f7f7f7;
-}
-
-.titulos-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 25px;
-    width: 900px;
-    margin: 30px auto;
-}
-
-.titulos-card {
-    width: 100%;
-    padding: 25px;
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    font-family: Arial, sans-serif; 
+    background: #0d0568; 
+    color: white; 
+    min-height: 100vh; 
+} 
+ 
+.login-container { 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 120px; 
     background: #191452; 
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.titulos-card:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-}
-
-
-.titulos-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.titulos-text {
-    font-size: 16px;
-    font-weight: bold;
-    opacity: 0.9;
-}
-
-.titulos-info strong {
-    font-size: 42px;
-    line-height: 1;
-    margin: 8px 0;
-}
-
-.titulos-desc {
-    font-size: 14px;
-    opacity: 0.9;
+} 
+ 
+.login-box { 
+    width: 500px; 
+    margin-top: 10%; 
+} 
+ 
+.login-box h1 { 
+    color: #A50044; 
+    font-size: 38px; 
+    margin-bottom: 10px; 
+} 
+ 
+.login-box p { 
+    font-size: 18px; 
+    margin-bottom: 70px; 
+} 
+ 
+.login-box label { 
+    display: block; 
+    color: #A50044; 
+    font-weight: bold; 
+    margin-bottom: 8px; 
+} 
+ 
+.login-box input { 
+    width: 100%; 
+    height: 50px; 
+    border: none; 
+    border-radius: 25px; 
+    padding: 0 25px; 
+    margin-bottom: 25px; 
+    background: #160d3c; 
+    color: white; 
+    font-size: 16px; 
+    outline: none; 
+} 
+ 
+.login-box input::placeholder { 
+    color: #ddd; 
+} 
+ 
+.login-box button { 
+    display: block; 
+    margin: 20px auto 0; 
+    width: 100%; 
+    height: 80px; 
+    border: none; 
+    border-radius: 20px; 
+    background: #A50044; 
+    color: white; 
+    font-size: 25px; 
+    cursor: pointer; 
+} 
+ 
+.login-box button:hover { 
+    background: #A50044; 
+    transform: scale(1.03); 
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); 
+} 
+ 
+.logo { 
+    width: 180px; 
+    transform: translate(-20px, -150px); 
+    position: relative; 
+} 
+ 
+.cadastro { 
+    text-align: center; 
+    margin-top: 20px; 
+} 
+ 
+.cadastro p { 
+    display: inline; 
+    font-size: 14px; 
+    color: white; 
+} 
+ 
+.cadastro a { 
+    color: #ff1616; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    margin-left: 5px; 
+} 
+ 
+.login { 
+    text-align: center; 
+    margin-top: 20px; 
+    transform: translateY(-10px); 
+} 
+ 
+.login p { 
+    display: inline; 
+    font-size: 14px; 
+    color: white; 
+} 
+ 
+.login a { 
+    color: #ff1616; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    margin-left: 5px; 
+} 
+ 
+.naveg { 
+    background: #A50044; 
+    height: 75px; 
+    width: 100%; 
+    padding: 20px; 
+    border-radius: 2px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+} 
+ 
+.naveg-logo { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+} 
+ 
+.naveg-logo img { 
+    width: 50px; 
+} 
+ 
+.naveg-links { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+} 
+ 
+.naveg-links a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 16px; 
+} 
+ 
+.naveg-links a:hover { 
+    color: #191452; 
+} 
+ 
+.tabelas-container { 
+    display: flex; 
+    gap: 25px; 
+    width: 100%; 
+    padding: 20px; 
+    align-items: flex-start; 
+} 
+ 
+.card-container { 
+    flex: 1; 
+    min-width: 0; 
+    background: white; 
+    color: #111; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+} 
+ 
+.titulo-comp { 
+    background: #111; 
+    color: white; 
+    padding: 20px 25px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+ 
+.titulo-comp h2 { 
+    font-size: 22px; 
+} 
+ 
+.titulo-comp span { 
+    color: #aaa; 
+} 
+ 
+.linha { 
+    display: grid; 
+    grid-template-columns: 40px 1fr repeat(8, 45px); 
+    align-items: center; 
+    min-height: 55px; 
+    padding: 0 10px; 
+    border-bottom: 1px solid #ddd; 
+    text-align: center; 
+} 
+ 
+.linha span:first-child { 
+    font-weight: bold; 
+} 
+ 
+.linha strong { 
+    text-align: left; 
+    font-size: 14px; 
+} 
+ 
+.cabecalho { 
+    min-height: 45px; 
+    background: #f1f1f1; 
+    color: #666; 
+    font-size: 11px; 
+    font-weight: bold; 
+} 
+ 
+.cabecalho span:nth-child(2) { 
+    text-align: left; 
+} 
+ 
+.linha:hover:not(.cabecalho) { 
+    background: #f7f7f7; 
+} 
+ 
+.titulos-container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 20px; 
+    width: 100%; 
+    padding: 20px; 
+    margin: 30px auto; 
+} 
+ 
+.titulos-card { 
+    flex: 1; 
+    min-width: 0; 
+    padding: 25px 15px; 
+    background: #191452; 
+    color: white; 
+    border-radius: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
+} 
+ 
+.titulos-card:hover { 
+    transform: translateY(-5px) scale(1.03); 
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); 
+} 
+ 
+.titulos-info { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+} 
+ 
+.titulos-text { 
+    font-size: 15px; 
+    font-weight: bold; 
+    opacity: 0.9; 
+} 
+ 
+.titulos-info strong { 
+    font-size: 42px; 
+    line-height: 1; 
+    margin: 8px 0; 
+} 
+ 
+.titulos-desc { 
+    font-size: 13px; 
+    opacity: 0.9; 
+} 
+ 
+.tela-titulo { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.75); 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1000; 
+} 
+ 
+.titulo-box { 
+    position: relative; 
+    width: 600px; 
+    max-width: 90%; 
+    padding: 40px; 
+    background: #191452; 
+    border-radius: 20px; 
+    text-align: center; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); 
+} 
+ 
+.titulo-box h2 { 
+    color: white; 
+    font-size: 32px; 
+    margin-bottom: 15px; 
+} 
+ 
+.titulo-box p { 
+    color: #ddd; 
+    margin-bottom: 30px; 
+} 
+ 
+.fechar { 
+    position: absolute; 
+    top: 15px; 
+    right: 25px; 
+    font-size: 35px; 
+    color: white; 
+    cursor: pointer; 
+} 
+ 
+.fechar:hover { 
+    color: #A50044; 
+} 
+ 
+.anos-titulo { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 12px; 
+} 
+ 
+.ano { 
+    padding: 10px 18px; 
+    background: #A50044; 
+    color: white; 
+    border-radius: 10px; 
+    font-weight: bold; 
 }
