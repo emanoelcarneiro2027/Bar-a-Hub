@@ -7,8 +7,9 @@ if (btnEntrar) {
     });
 }
 
-if (btnAvancar) {
-    btnAvancar.addEventListener("click", function() {
+if (btnCadastrar) {
+    btnCadastrar.addEventListener("click", function() {
+        event.preventDefault
         window.location.href = "Barça Lobby.html";
     });
 }
@@ -79,21 +80,14 @@ const titulos = {
 };
 
 function mostrarTitulo(nome) {
-
     tituloNome.textContent = nome;
-
     anosTitulo.innerHTML = "";
 
     titulos[nome].forEach(function(ano) {
-
         const elemento = document.createElement("span");
-
         elemento.classList.add("ano");
-
         elemento.textContent = ano;
-
         anosTitulo.appendChild(elemento);
-
     });
 
     telaTitulo.style.display = "flex";
