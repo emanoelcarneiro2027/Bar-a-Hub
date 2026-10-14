@@ -1,5 +1,7 @@
+
 const btnEntrar = document.getElementById("btnEntrar");
 const btnAvancar = document.getElementById("btnAvancar");
+const btnCadastrar = document.getElementById("btnCadastrar");
 
 if (btnEntrar) {
     btnEntrar.addEventListener("click", function() {
@@ -7,9 +9,15 @@ if (btnEntrar) {
     });
 }
 
+if (btnAvancar) {
+    btnAvancar.addEventListener("click", function() {
+        window.location.href = "Barça Lobby.html";
+    });
+}
+
 if (btnCadastrar) {
-    btnCadastrar.addEventListener("click", function() {
-        event.preventDefault
+    btnCadastrar.addEventListener("click", function(event) {
+        event.preventDefault();
         window.location.href = "Barça Lobby.html";
     });
 }
@@ -26,60 +34,22 @@ const fecharTitulo = document.getElementById("fecharTitulo");
 
 const titulos = {
     "La Liga": [
-        1929,
-        1945,
-        1948,
-        1949,
-        1952,
-        1953,
-        1959,
-        1960,
-        1974,
-        1985,
-        1991,
-        1992,
-        1993,
-        1994,
-        1998,
-        1999,
-        2005,
-        2006,
-        2009,
-        2010,
-        2011,
-        2013,
-        2015,
-        2016,
-        2018,
-        2019,
-        2023,
-        2025
+        1929, 1945, 1948, 1949, 1952, 1953, 1959, 1960,
+        1974, 1985, 1991, 1992, 1993, 1994, 1998, 1999,
+        2005, 2006, 2009, 2010, 2011, 2013, 2015, 2016,
+        2018, 2019, 2023, 2025
     ],
 
-    "Champions League": [
-        1992,
-        2006,
-        2009,
-        2011,
-        2015
-    ],
+    "Champions League": [1992, 2006, 2009, 2011, 2015],
 
-    "UEFA SuperCup": [
-        1992,
-        1997,
-        2009,
-        2011,
-        2015
-    ],
+    "UEFA SuperCup": [1992, 1997, 2009, 2011, 2015],
 
-    "FIFA Club World Cup": [
-        2009,
-        2011,
-        2015
-    ]
+    "FIFA Club World Cup": [2009, 2011, 2015]
 };
 
 function mostrarTitulo(nome) {
+    if (!telaTitulo || !tituloNome || !anosTitulo) return;
+
     tituloNome.textContent = nome;
     anosTitulo.innerHTML = "";
 
@@ -117,7 +87,7 @@ if (intercontinental) {
     });
 }
 
-if (fecharTitulo) {
+if (fecharTitulo && telaTitulo) {
     fecharTitulo.addEventListener("click", function() {
         telaTitulo.style.display = "none";
     });
@@ -125,10 +95,8 @@ if (fecharTitulo) {
 
 if (telaTitulo) {
     telaTitulo.addEventListener("click", function(event) {
-
         if (event.target === telaTitulo) {
             telaTitulo.style.display = "none";
         }
-
     });
 }
